@@ -1,0 +1,111 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #6b4e71, #3e455b);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column; /* Alinhar elementos verticalmente */
+}
+
+header {
+    background-color: #6b4e71;
+    text-align: center;
+    padding: 20px;
+    width: 100%; /* Alinhar à largura da página */
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.drink-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espaçamento uniforme entre os elementos */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 100%; /* Alinhar à largura da página */
+    max-width: 1200px; /* Largura máxima da lista de drinks */
+}
+
+.drink-card {
+    background-color: #2d2d2d;
+    border: 1px solid #d3c0c2;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: transform 0.3s;
+    border-radius: 10px;
+    flex: 1; /* Distribuir espaço igualmente entre os elementos */
+}
+
+.drink-card:hover {
+    transform: scale(1.05);
+}
+
+.drink-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.drink-card h2 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.drink-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.drink-card li {
+    margin-bottom: 5px;
+}
+
+.drink-details {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px; /* Largura máxima dos detalhes do drink */
+}
+
+#drink-image {
+    max-width: 100%;
+    height: auto;
+}
+
+#drink-ingredients {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilos para drinks específicos, mantenha os que você já tinha */
+.drink-card[data-drink="cosmopolitan"] {
+    background-color: #3e455b;
+}
+
+.drink-card[data-drink="piña-colada"] {
+    background-color: #595a45;
+}
+
+.drink-card[data-drink="caipirinha"] {
+    background-color: #455b59;
+}
+
+.drink-card[data-drink="daiquiri"] {
+    background-color: #5b4545;
+}
+
+.drink-card[data-drink="martini"] {
+    background-color: #5b4558;
+}

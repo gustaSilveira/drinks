@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio de Drinks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>todos os   Drinks chacrinha</h1>
+    </header>
+    <div class="drink-menu">
+        <div class="drink-card" data-drink="margarita">
+            <img src="imagens/margarita.jpg" alt="Margarita">
+            <h2>Margarita</h2>
+            <ul>
+                <li>50ml de Tequila</li>
+                <li>30ml de Suco de Limão</li>
+                <li>20ml de Triple Sec</li>
+                <li>Gelo</li>
+                <li>Sal para a borda do copo</li>
+            </ul>
+        </div>
+        <div class="drink-card" data-drink="mojito">
+            <img src="imagens/mojito.jpg" alt="Mojito">
+            <h2>Mojito</h2>
+            <ul>
+                <li>50ml de Rum</li>
+                <li>30ml de Suco de Limão</li>
+                <li>15ml de Xarope de Açúcar</li>
+                <li>Folhas de Hortelã</li>
+                <li>Gelo</li>
+            </ul>
+        </div>
+    </div>
+    <div class="drink-card" data-drink="cosmopolitan">
+        <img src="imagens/cosmopolitan.jpg" alt="Cosmopolitan">
+        <h2>Cosmopolitan</h2>
+        <ul>
+            <li>40ml de Vodka Cítrica</li>
+            <li>15ml de Triple Sec</li>
+            <li>15ml de Suco de Cranberry</li>
+            <li>15ml de Suco de Limão</li>
+            <li>Gelo</li>
+        </ul>
+    </div>
+    
+    <div class="drink-card" data-drink="piña-colada">
+        <img src="imagens/pina-colada.jpg" alt="Piña Colada">
+        <h2>Piña Colada</h2>
+        <ul>
+            <li>60ml de Rum Branco</li>
+            <li>90ml de Suco de Abacaxi</li>
+            <li>30ml de Leite de Coco</li>
+            <li>Gelo</li>
+        </ul>
+    </div>
+    
+    <div class="drink-card" data-drink="caipirinha">
+        <img src="imagens/caipirinha.jpg" alt="Caipirinha">
+        <h2>Caipirinha</h2>
+        <ul>
+            <li>60ml de Cachaça</li>
+            <li>1 Limão</li>
+            <li>2 colheres de açúcar</li>
+            <li>Gelo</li>
+        </ul>
+    </div>
+    
+    <div class="drink-card" data-drink="daiquiri">
+        <img src="imagens/daiquiri.jpg" alt="Daiquiri">
+        <h2>Daiquiri</h2>
+        <ul>
+            <li>60ml de Rum Branco</li>
+            <li>30ml de Suco de Limão</li>
+            <li>15ml de Xarope de Açúcar</li>
+            <li>Gelo</li>
+        </ul>
+    </div>
+    
+    <div class="drink-card" data-drink="martini">
+        <img src="imagens/martini.jpg" alt="Martini">
+        <h2>Martini</h2>
+        <ul>
+            <li>60ml de Gin</li>
+            <li>15ml de Vermute Seco</li>
+            <li>1 Azeitona</li>
+        </ul>
+    </div>
+    <div class="add-drink-form">
+        <h2>Adicionar Drink</h2>
+        <form id="drink-form">
+            <label for="drink-name">Nome do Drink:</label>
+            <input type="text" id="drink-name" name="drink-name" required>
+            
+            <label for="drink-image-url">URL da Imagem:</label>
+            <input type="url" id="drink-image-url" name="drink-image-url" required>
+            
+            <label for="drink-ingredients">Ingredientes (separados por vírgula):</label>
+            <input type="text" id="drink-ingredients" name="drink-ingredients" required>
+            
+            <button type="submit">Adicionar</button>
+        </form>
+    </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
